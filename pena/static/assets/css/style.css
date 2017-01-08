@@ -1,0 +1,86 @@
+body {
+	background-color: #7bc4d3;
+	font-family: sans-serif;
+	min-width: 300px;
+}
+.play {
+	position: relative;
+}
+.message {
+	position: absolute;
+	color: white;
+	font-weight: bold;
+	font-size: 18pt;
+	text-align: center;
+	width: 100%;
+	top: 10px;
+}
+.illustration {
+	display: block;
+	max-width: 500px;
+	width: 100%;
+	margin: auto;
+}
+.yes_or_no_buttons {
+	position: absolute;
+	font-weight: bold;
+	color: white;
+	font-size: 32pt;
+	text-decoration: none;
+	top: 0;
+	left: 50%;
+	transform: translate(-50%, 0);
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+	outline: none;
+}
+.yes_button {
+	margin-top: 143px;
+	margin-left: -116px;
+}
+.no_button {
+	margin-top: 112px;
+	margin-left: 112px;
+}	
+#accept_answer,
+#reject_answer {
+	cursor: pointer;
+}
+input[data-ng-model="characterName"] {
+	background: transparent;
+	border: solid 2px white;
+	font-size: 18pt;
+	color: white;
+	width: 200px;
+}
+input[data-ng-model="characterName"]:focus {
+	outline: none;
+}
+@media (max-width: 500px) {
+	.message {
+		font-size: 16pt;
+	}
+	.yes_or_no_buttons {
+		font-size: 24pt;
+	}
+	.yes_button {
+		margin-top: 28.6%;
+		margin-left: -23.2%;
+	}
+	.no_button {
+		margin-top: 22.4%;
+		margin-left: 22.4%;
+	}
+	input[data-ng-model="characterName"] {
+		font-size: 16pt;
+	}
+}
+@media (max-width: 400px) {
+	.yes_or_no_buttons {
+		font-size: 20pt;
+	}
+	input[data-ng-model="characterName"] {
+		font-size: 20pt;
+	}
+}

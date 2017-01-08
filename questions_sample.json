@@ -1,0 +1,82 @@
+[
+	{
+		"name": "male",
+		"text": "Is your character a male?"
+	},
+	{
+		"name": "dead",
+		"text": "Is your character dead?"
+	},
+	{
+		"name": "over_40years",
+		"text": "Is your character over 40 years old?"
+	},
+	{
+		"name": "actor",
+		"text": "Is your character an actor?"
+	},
+	{
+		"name": "singer",
+		"text": "Is your character a singer?"
+	},
+	{
+		"name": "musician",
+		"text": "Is your character a musician?"
+	},
+	{
+		"name": "political_leader",
+		"text": "Is your character a political leader?"
+	},
+	{
+		"name": "youtuber",
+		"text": "Is your character a youtuber?"
+	},
+	{
+		"name": "religious_figure",
+		"text": "Is your character a religious figure?"
+	},
+	{
+		"name": "sportsman",
+		"text": "Is your character a sportsman?"
+	},
+	{
+		"name": "linkedto_videogames",
+		"text": "Is your character linked with video games?"
+	},
+	{
+		"name": "swimmer",
+		"text": "Is your character a swimmer?"
+	},
+	{
+		"name": "european",
+		"text": "Is your character European?"
+	},
+	{
+		"name": "american",
+		"text": "Is your character American?"
+	},
+	{
+		"name": "arabic",
+		"text": "Is your character of Arabic origins?"
+	},
+	{
+		"name": "won_championship",
+		"text": "Has your character won some type of championship?"
+	},
+	{
+		"name": "something_onhead",
+		"text": "Does your character wear something on their head?"
+	},
+	{
+		"name": "bearded",
+		"text": "Is your character bearded?"
+	},
+	{
+		"name": "smoke",
+		"text": "Does your character smoke?"
+	},
+	{
+		"name": "long_hair",
+		"text":	"Does your character always have long hair?"
+	}
+]
