@@ -1,22 +1,16 @@
-<main class="play">
-	<span class="message">
-		<span data-ng-bind="message"></span>
-		<span data-ng-show="context == 'guess'">
-			<i id="accept_answer" class="fa fa-smile-o" data-ng-click="acceptAnswer()"></i>
-			<span> or </span>
-			<i id="reject_answer" class="fa fa-frown-o" data-ng-click="rejectAnswer()"></i>
-		</span>
-		<span data-ng-show="context == 'submit'">
-			<input type="text" data-ng-model="characterName" data-ng-keyup="$event.keyCode == 13 ? tellPena() : null">
-		</span>
+<span class="message">
+	<span data-ng-bind="message"></span>
+	<span data-ng-show="context == 'guess'">
+		<i id="accept_answer" class="fa fa-smile-o" data-ng-click="acceptAnswer()"></i>
+		<span> or </span>
+		<i id="reject_answer" class="fa fa-frown-o" data-ng-click="rejectAnswer()"></i>
 	</span>
+	<span data-ng-show="context == 'submit'">
+		<input type="text" data-ng-model="characterName" data-ng-keyup="$event.keyCode == 13 ? tellPena() : null">
+	</span>
+</span>
 
-	<img class="illustration" src="assets/img/exception.jpg" alt="Exception" data-ng-show="context == 'exception'">
-	<img class="illustration" src="assets/img/question.jpg" alt="Question" data-ng-show="context == 'question'">
-	<img class="illustration" src="assets/img/guess.jpg" alt="Guess" data-ng-show="context == 'guess'">
-	<img class="illustration" src="assets/img/success.jpg" alt="Success" data-ng-show="context == 'success'">
-	<img class="illustration" src="assets/img/submit.jpg" alt="Submit" data-ng-show="context == 'submit'">
+<img class="illustration" alt="Illustration for {{ context }}" data-ng-src="assets/img/{{ context }}.jpg">
 
-	<button class="yes_or_no_buttons yes_button" alt="Choose Yes" data-ng-show="context == 'question'" data-ng-click="answerYes()">Yes</button>
-	<button class="yes_or_no_buttons no_button" alt="Choose No" data-ng-show="context == 'question'" data-ng-click="answerNo()">No</button>
-</main>
+<button class="yes_or_no_buttons yes_button" alt="Choose Yes" data-ng-show="context == 'question'" data-ng-click="answerYes()">Yes</button>
+<button class="yes_or_no_buttons no_button" alt="Choose No" data-ng-show="context == 'question'" data-ng-click="answerNo()">No</button>

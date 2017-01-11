@@ -6,7 +6,7 @@ from setuptools import setup
 setup(
     name='PENA',
     version='0.1.0',
-    description="PENA's Entirely New Akinator",
+    description="PENA's an Entirely New Akinator",
     long_description=open('README.md').read(),
     license='MIT',
     keywords="artificial intelligence prolog game",

@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>PENA's Entirely New Akinator</title>
+		<title>PENA's an Entirely New Akinator</title>
 		<meta name="viewport" content="width=device-width,initial-scale=1">
 		<base href="/">
 
@@ -10,7 +10,21 @@
 		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	</head>
 	<body data-ng-app="penaApp">
-		<div data-ng-view></div>
+		<main>
+			<div data-ng-view></div>
+		</main>
+		<footer>
+			<nav>
+				<ul>
+					<li><a href="/">/home</a></li>
+					<li><a href="/play">/play</a></li>
+					<li><a href="/about">/about</a></li>
+				</ul>
+			</nav>
+			<div id="vectors_copyright">
+				<a href="http://www.freepik.com/free-photos-vectors/business" target="_blank">Business vector designed by Kraphix - Freepik.com</a>
+			</div>
+		</footer>
 
 		<script src="assets/libs/angular.js"></script>
 		<script src="assets/libs/angular-route.js"></script>

@@ -77,7 +77,6 @@ class Pena:
         return p
 
     def process(self, answers, operation, limit=None):
-        # Return variables initialisation
         decision = 'UNKNOWN'
         data = {}
 
@@ -151,7 +150,7 @@ class Pena:
             fact = "character('" + str(character['name']) + "', "
             # Every fact should have the exact same number
             # of answers as the number of questions
-            # If the question has no answer write null
+            # If the question has no answers write null
             for index in range(len(self.questions)):
                 if self.questions[index]['name'] in character:
                     if character[self.questions[index]['name']]:
@@ -215,7 +214,14 @@ class Pena:
             # Load valid answers
             valid_answsers = {}
             if 'name' in answers:
-                valid_answsers['name'] = answers['name']
+                try:
+                    valid_answsers['name'] = str(answers['name'])
+                except UnicodeEncodeError:
+                    decision = 'REJECTED' 
+                    data['exception'] = \
+                        "Character's name contains special characters"
+                    return decision, data
+                    
             for index in range(len(self.questions)):
                 question_name = self.questions[index]['name']
                 if question_name in answers:
