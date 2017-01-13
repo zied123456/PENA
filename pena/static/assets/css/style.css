@@ -56,7 +56,6 @@ input[data-ng-model="characterName"]:focus {
 	color: white;
 	width: 200px;
 	outline: none;
-	text-transform: capitalize;
 }
 footer {
 	position: fixed;
