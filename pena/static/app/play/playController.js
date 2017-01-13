@@ -1,6 +1,7 @@
 app.controller(
 	'playController',
-	function($scope, $timeout, $location, askService, tellService) {
+	function($scope, $rootScope, $timeout, $location, askService, tellService) {
+		$rootScope.title = "Play | PENA";
 		$scope.answers = {};
 		$scope.character = {};
 		$scope.limit = 10;

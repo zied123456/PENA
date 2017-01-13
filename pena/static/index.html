@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html data-ng-app="penaApp">
 	<head>
 		<meta charset="utf-8">
-		<title>PENA's an Entirely New Akinator</title>
+		<title data-ng-bind="title">Loading...</title>
 		<meta name="viewport" content="width=device-width,initial-scale=1">
 		<base href="/">
 
 		<link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
 		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	</head>
-	<body data-ng-app="penaApp">
+	<body>
 		<main>
 			<div data-ng-view></div>
 		</main>
@@ -30,8 +30,11 @@
 		<script src="assets/libs/angular-route.js"></script>
 		<script src="app/module.js"></script>
 		<script src="app/routes.js"></script>
+		<script src="app/home/homeController.js"></script>
 		<script src="app/play/askService.js"></script>
 		<script src="app/play/tellService.js"></script>
 		<script src="app/play/playController.js"></script>
+		<script src="app/about/aboutController.js"></script>
+		<script src="app/notfound/notfoundController.js"></script>
 	</body>
 </html>
