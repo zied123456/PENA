@@ -49,6 +49,24 @@ pena questions_sample.json database.json localhost 5000
 
 * "http://localhost:5000" is hardcoded in PenaJavaLayer so keep it as it is.
 
+## Scrots
+
+![Home](https://raw.githubusercontent.com/zied123456/PENA/master/scrots/home.png)
+
+![Play Question](https://raw.githubusercontent.com/zied123456/PENA/master/scrots/play_question.png)
+
+![Play Guess](https://raw.githubusercontent.com/zied123456/PENA/master/scrots/play_guess.png)
+
+![Play Submit](https://raw.githubusercontent.com/zied123456/PENA/master/scrots/play_submit.png)
+
+![Play Found](https://raw.githubusercontent.com/zied123456/PENA/master/scrots/play_found.png)
+
+![Play Success](https://raw.githubusercontent.com/zied123456/PENA/master/scrots/play_success.png)
+
+![About](https://raw.githubusercontent.com/zied123456/PENA/master/scrots/about.png)
+
+![Exception](https://raw.githubusercontent.com/zied123456/PENA/master/scrots/exception.png)
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details

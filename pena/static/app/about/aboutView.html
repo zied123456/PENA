@@ -1,3 +1,65 @@
 <div class="about">
-	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras porta tempor turpis eu faucibus. Morbi et arcu at risus consectetur egestas. In fermentum lectus eget augue dictum volutpat. Nunc condimentum mollis elit id luctus. Nulla ornare, felis vel consectetur venenatis, neque orci scelerisque ligula, vel placerat elit sapien non ipsum. Integer lobortis, felis vel egestas efficitur, ipsum neque suscipit mauris, ut fermentum orci libero eu justo. Vestibulum ultricies ante vel dignissim malesuada. Integer hendrerit magna varius, ornare turpis et, lobortis ex. Nunc sit amet lacus at est scelerisque mollis. Integer mauris erat, posuere eget enim ut, vehicula faucibus velit. Quisque turpis mi, tristique quis congue congue, interdum at arcu. Mauris in elementum nibh. Nullam pellentesque leo ac diam posuere, et faucibus lorem blandit. Curabitur sollicitudin urna id tortor iaculis faucibus. Donec non tincidunt ligula. Vestibulum eget justo vitae diam mollis vestibulum.
+	<h1>PENA's an Entirely New Akinator</h1>
+
+	<p>PENA is a game based on Twenty Questions that attempts to determine which character the player is thinking of by asking them a series of questions.</p>
+
+	<h2>Help for Windows</h2>
+
+	<h3>Prerequisites</h3>
+
+	<ul>
+		<li><p>Install python-2.7.13.msi</p></li>
+		<li><p>Install swipl-w32-723.exe</p></li>
+		<li><p>Execute the command prompt (cmd) as administrator and run:</p></li>
+	</ul>
+
+	<p><code>
+	rename "C:\Program Files (x86)\swipl\bin\libswipl.dll" libpl.dll
+	</code></p>
+
+	<h3>Installing pena cli</h3>
+
+	<ul>
+		<li><a href="http://www.howtogeek.com/howto/windows-vista/stupid-geek-tricks-open-a-command-prompt-from-the-desktop-right-click-menu/">Open a new command prompt</a> in PENA's root directory</li>
+	</ul>
+
+	<p><code>
+	python setup.py install
+	</code></p>
+
+	<h3>Building PENAJavaLayer's WAR</h3>
+
+	<ul>
+	<li><a href="http://www.howtogeek.com/howto/windows-vista/stupid-geek-tricks-open-a-command-prompt-from-the-desktop-right-click-menu/">Open a new command prompt</a> in PENA's root directory</li>
+	</ul>
+
+	<p><code>
+	cd pena_java_layer
+	set PATH=..\gradle\bin;%PATH%
+	gradle war
+	</code></p>
+
+	<ul>
+		<li><p>The final WAR file location is: PENA<em>ROOT</em>DIRECTORY\pena<em>java</em>layer\build\libs\pena<em>java</em>layer.war</p></li>
+		<li><p>Before deploying the WAR in your web server, make sure pena cli is running.</p></li>
+	</ul>
+
+	<h3>Running pena cli</h3>
+
+	<ul>
+		<li><a href="http://www.howtogeek.com/howto/windows-vista/stupid-geek-tricks-open-a-command-prompt-from-the-desktop-right-click-menu/">Open a new command prompt</a> in PENA's root directory</li>
+	</ul>
+
+	<p><code>
+	set PATH=C:\Program Files (x86)\swipl\bin;%PATH%
+	pena questions_sample.json database.json localhost 5000
+	</code></p>
+
+	<ul>
+		<li>"http://localhost:5000" is hardcoded in PenaJavaLayer so keep it as it is.</li>
+	</ul>
+
+	<h2>License</h2>
+
+	<p>This project is licensed under the MIT License - see the <a href="LICENSE">LICENSE</a> file for details</p>
 </div>

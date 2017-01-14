@@ -91,6 +91,14 @@ footer #vectors_copyright a:active {
 }
 .about {
 	width: 500px;
-	padding: 10px;
+	padding: 10px 10px 50px 10px;
 	margin: auto;
+}
+.about a:link,
+.about a:visited,
+.about a:hover,
+.about a:active {
+	color: white;
+	font-style: italic;
+	text-decoration: none;
 }
